@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars J Mathew A. Lim — IT Student Portfolio</title>
+<meta name="description" content="Portfolio of Mars J Mathew A. Lim, BS Information Technology student: projects, on-the-job training, certificates, seminars, and CV.">
+
+<!-- Open Graph (shows a preview when the link is shared) -->
+<meta property="og:title" content="Mars J Mathew A. Lim — IT Student Portfolio">
+<meta property="og:description" content="Projects, OJT experience, certificates and seminars.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#home">
+      <span class="brand__mark" aria-hidden="true">ML</span>
+      <span class="brand__text">Mars Lim</span>
+      <span class="avail" title="Open to opportunities"><i></i>Open to work</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Sections">
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ojt">OJT</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar__tools">
+      <button class="iconbtn" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+        <span class="iconbtn__glyph" aria-hidden="true">◐</span>
+      </button>
+      <button class="iconbtn iconbtn--menu" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- reading progress -->
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap hero__grid">
+
+      <!-- PHOTO: replace assets/img/profile.jpg with your own picture.
+           A square crop works best (800x800 or larger). -->
+      <figure class="portrait">
+        <img src="assets/img/profile.jpg" alt="Portrait of Mars J Mathew A. Lim" width="640" height="640">
+        <figcaption class="portrait__tag">BSIT · 2022–2026</figcaption>
+      </figure>
+
+      <div class="hero__body">
+        <p class="term" aria-hidden="true">
+          <span class="term__prompt">visitor@marslim:~$</span>
+          <span id="termOut"></span><span class="term__caret"></span>
+        </p>
+
+        <h1 class="hero__name">
+          <span class="hero__nameline" data-text="Mars">Mars</span>
+          <span class="hero__nameline" data-text="J Mathew A. Lim">J Mathew A. Lim</span>
+        </h1>
+
+        <p class="hero__line">
+          Adaptable IT student driven by curiosity and continuous improvement.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="assets/cv/Resume-CV-Lim-Mars-J-Mathew.pdf" download>
+            Download CV (PDF)
+          </a>
+          <a class="btn btn--ghost" href="#projects">See my projects</a>
+        </div>
+
+        <ul class="social" aria-label="Profiles">
+          <li><a class="social__btn" href="https://github.com/Lim-Mars" target="_blank" rel="noopener" title="GitHub"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span class="sr-only">GitHub</span></a></li>
+          <li><a class="social__btn" href="https://linkedin.com/in/marsjmathewlim" target="_blank" rel="noopener" title="LinkedIn"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg><span class="sr-only">LinkedIn</span></a></li>
+          <li><a class="social__btn" href="mailto:marsjmathewlim@gmail.com" title="Email"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg><span class="sr-only">Email</span></a></li>
+    
+        </ul>
+        <div class="facts">
+          <div class="facts__row">
+            <span class="facts__label">LOCATION</span>
+            <span class="facts__val">Cabuyao, Laguna, PH</span>
+          </div>
+          <div class="facts__row">
+            <span class="facts__label">STATUS</span>
+            <span class="facts__val">4th year</span>
+          </div>
+          <div class="facts__row">
+            <span class="facts__label">OJT HOURS</span>
+            <span class="facts__val">486 completed</span>
+          </div>
+          <div class="facts__row">
+            <span class="facts__label">OPEN TO</span>
+            <span class="facts__val">Entry level - Remote</span>
+          </div>
+          <div class="facts__row">
+            <span class="facts__label">EMAIL</span>
+            <span class="facts__val">marsjmathewlim@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">About</h2>
+      </div>
+      <div class="record__body prose">
+        <p>
+          I am a BS Information Technology student with hands-on experience in IT Support, Full-Stack Web Development, and
+          Network Infrastructure. I am a highly adaptable learner eager to utilize my technical skills, master new tools, and
+          become a reliable, collaborative member committed to contributing to technical solutions.
+        </p>
+        <ul class="tags">
+          <li>Full-stack basics</li>
+          <li>Network fundamentals</li>
+          <li>Technical documentation</li>
+          <li>English &amp; Filipino</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--tint" id="skills">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">Skills</h2>
+        <p class="record__note">Tools I've actually shipped with</p>
+      </div>
+      <div class="record__body">
+        <div class="skills">
+          <div class="skillset">
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Python</li><li>Java</li><li>SQL</li><li>C#</li><li>C++</li>
+            </ul>
+          </div>
+          <div class="skillset">
+            <h3>Web Development</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skillset">
+            <h3>Databases &amp; tools</h3>
+            <ul class="tags">
+              <li>MySQL</li><li>GitHub</li><li>VS Code</li><li>Figma</li><li>Tableau</li><li>Oracle Virtualbox</li><li>Android Studio</li><li>phpMyAdmin</li>
+            </ul>
+          </div>
+          <div class="skillset">
+            <h3>Systems &amp; networking</h3>
+            <ul class="tags">
+              <li>Windows Server</li><li>Cisco Packet Tracer</li><li>LAN Configuration</li><li>Network Topology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">Projects</h2>
+        <p class="record__note">Academic and capstone work</p>
+      </div>
+
+      <div class="record__body">
+        <div class="filters" role="group" aria-label="Filter projects by type">
+          <button class="chip is-active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="capstone">Capstone</button>
+          <button class="chip" type="button" data-filter="ManagementSystem">Management System</button>
+          <button class="chip" type="button" data-filter="iot">IOT</button>
+          <button class="chip" type="button" data-filter="game">Game</button>
+          
+        </div>
+
+        <ul class="projects" id="projectList">
+
+          <!-- Each project can have a photo strip. Click any photo to open the
+               gallery; the arrows move through that project's photos only.
+               Add or remove <li> items inside .shots freely. -->
+          <li class="project" data-type="capstone" data-gallery="cryptosystem">
+            <div class="project__head">
+              <h3 class="project__name">A Three Layered Hybrid Cryptosystem Simulator Application Applied to Selected LAN Topologies</h3>
+              <span class="project__year">2025–2026</span>
+            </div>
+            <p class="project__what">
+              It is an educational simulator designed to demonstrate the application of a hybrid cryptosystem within LAN environments. 
+              The application simulates encryption, transmission, and decryption of text data across selected network topologies, 
+              including Computer-Switch-Computer, Computer-Router-Computer, and Computer-Switch-Router-Switch-Computer. 
+              It also visualizes the cryptographic processes to help users understand the practical application of cryptography in network environments.
+            </p>
+            <ul class="tags tags--sm">
+              <li>C#</li><li>Windows Forms</li>
+            </ul>
+
+            <ul class="shots">
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/cryptosystem-1.png"
+                    data-caption="Main simulator window">
+                <img src="assets/projects/cryptosystem-1.png" alt="Cryptosystem simulator main window" loading="lazy">
+              </button></li>
+            </ul>
+
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/Lim-Mars/A-Three-Layered-Hybrid-Cryptosystem-Simulator-Application-Applied-to-Selected-LAN-Topologies" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span>Source code</span></a>
+            </p>
+          </li>
+
+          <li class="project" data-type="ManagementSystem" data-gallery="hotel">
+            <div class="project__head">
+              <h3 class="project__name">Hotel Management System</h3>
+              <span class="project__year">2025</span>
+            </div>
+            <p class="project__what">
+              Developed an Application that would allow managing reservations, check rooms availability, handle customer data, and handle payments easier by having
+              the application implement CRUD (Create, Read, Update, Delete) interaction with the database.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Python</li><li>Oracle DB</li>
+            </ul>
+
+            <ul class="shots">
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/reservem.png"
+                    data-caption="Reservation dashboard">
+                <img src="assets/projects/reservem.png" alt="Hotel system reservation dashboard" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/customerm.png"
+                    data-caption="List of Customer Data">
+                <img src="assets/projects/customerm.png" alt="List of Customer Data" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/paymentm.png"
+                    data-caption="Payment Processing Dashboard">
+                <img src="assets/projects/paymentm.png" alt="Payment Processing Dashboard" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/roomm.png"
+                    data-caption="List of Room Types, Service, and Price">
+                <img src="assets/projects/roomm.png" alt="List of Room Types, Service, and Price" loading="lazy">
+              </button></li>
+            </ul>
+
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/Lim-Mars/Hotel-Management-System" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span>Source code</span></a>
+            </p>
+          </li>
+
+          <li class="project" data-type="game" data-gallery="4pics1word">
+            <div class="project__head">
+              <h3 class="project__name">4Pics1Word</h3>
+              <span class="project__year">2022</span>
+            </div>
+            <p class="project__what">
+              Replica of the 4 Pics 1 Word game that makes you guess a word base on the 4 images provided with similar contexts.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Python</li>
+            </ul>
+
+            <ul class="shots">
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/4pics1word-1.png"
+                    data-caption="Round in progress">
+                <img src="assets/projects/4pics1word-1.png" alt="4Pics1Word round in progress" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/4pics1word-2.png"
+                    data-caption="Guessing">
+                <img src="assets/projects/4pics1word-2.png" alt="4Pics1Word guessing" loading="lazy">
+              </button></li>
+            </ul>
+
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/Lim-Mars/4Pics1Word" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span>Source code</span></a>
+            </p>
+          </li>
+
+          <li class="project" data-type="game" data-gallery="dungeon">
+            <div class="project__head">
+              <h3 class="project__name">CLI Randomly Generated Dungeon Crawler Game</h3>
+              <span class="project__year">2023</span>
+            </div>
+            <p class="project__what">
+              It is a text-based dungeon-crawler game where players venture through a 50-floor randomly generated dungeon.
+              Each floor presents different room types, including loot rooms, empty rooms, PvE combat rooms, and trap rooms,
+              while the 50th floor features a final boss battle with turn-based combat.
+            </p>
+            <ul class="tags tags--sm">
+              <li>C#</li>
+            </ul>
+
+            <ul class="shots">
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/difficulty.png"
+                    data-caption="Difficulty">
+                <img src="assets/projects/difficulty.png" alt="Difficulty Selection" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/pveroom.png"
+                    data-caption="Turn-based PVE">
+                <img src="assets/projects/pveroom.png" alt="Turn-based PVE" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/leaderboard.png"
+                    data-caption="Leaderboard">
+                <img src="assets/projects/leaderboard.png" alt="Leaderboard Section" loading="lazy">
+              </button></li>
+            </ul>
+
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/Lim-Mars/CLI-Randomly-Generated-Dungeon-Crawler-Game" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span>Source code</span></a>
+            </p>
+          </li>
+
+          <li class="project" data-type="iot" data-gallery="earthquake">
+            <div class="project__head">
+              <h3 class="project__name">Earthquake Detection Alert System</h3>
+              <span class="project__year">2025</span>
+            </div>
+            <p class="project__what">
+              It is a microcontroller-based safety device designed to detect earthquake vibrations and provide immediate
+              alerts through mobile notifications. It uses an Arduino Uno R3 to monitor vibration intensity, activate warning indicators,
+              record event data, and communicate results wirelessly. The system also includes a web-based dashboard and MySQL.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Arduino IDE</li><li>Kotlin</li><li>XAMPP</li>
+            </ul>
+
+            <ul class="shots">
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/earthquake-1.jpg"
+                    data-caption="Project Prototype">
+                <img src="assets/projects/earthquake-1.jpg" alt="Project Prototype" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/projects/earthquake-2.jpg"
+                    data-caption="Detection and Alert Dashboard with Log">
+                <img src="assets/projects/earthquake-2.jpg" alt="Detection and Alert Dashboard" loading="lazy">
+              </button></li>
+            </ul>
+
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/duanetheworld/Earthquake-Detection-Alert-System" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span>Source code</span></a>
+            </p>
+          </li>
+        </ul>
+
+        <p class="empty" id="projectsEmpty" hidden>No projects under this filter yet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OJT ============ -->
+  <section class="section section--tint" id="ojt">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">OJT experience</h2>
+        <p class="record__note">On-the-job training</p>
+      </div>
+
+      <div class="record__body">
+        <ol class="timeline">
+          <li class="stint" data-gallery="seda">
+            <p class="stint__when">May – Aug 2026 · 486 hours</p>
+            <h3 class="stint__role">IT Support Intern</h3>
+            <p class="stint__where">Seda Nuvali Hotel</p>
+            <ul class="stint__points">
+              <li>Handled and assisted with Level 1 and 2 support tickets for hardware, software, and
+              network issues or requests for guest and hotel staff.</li>
+              <li>Maintained system and service area uptime and ensured seamless service by conducting
+              preventative maintenance checks across hotel IT infrastructure.</li>
+              <li>Configured and updated user data, keycards, workstations, and point-of-sale (POS) systems.</li>
+              <li>Refurbished and deployed IT assets by salvaging, testing, and assembling hardware components from old non-working PCs, 
+                  replacing and upgrading components, and installing Windows OS for the PC donation Project. </li>
+            </ul>
+
+            <!-- OJT photos: workplace shots, certificate of completion, team photos. -->
+            <ul class="shots shots--wide">
+              <li><button class="shot" type="button"
+                    data-full="assets/ojt/seda-1.jpg"
+                    data-caption="Seda Nuvali — Troubleshooting PC Issue">
+                <img src="assets/ojt/seda-1.jpg" alt="Troubleshooting PC Issue" loading="lazy">
+              </button></li>
+              <li><button class="shot" type="button"
+                    data-full="assets/ojt/seda-2.png"
+                    data-caption="Maintenance on hotel game room PCs">
+                <img src="assets/ojt/seda-2.png" alt="Maintenance on hotel game room PCs" loading="lazy">
+              </button></li>
+            </ul>
+
+            <!-- Links for this OJT entry. Point PROGRESS_LINK at the GitHub repo or
+                 folder holding your OJT records, and put the PDF itself at
+                 assets/ojt/progress-report.pdf (or update the href below to match). -->
+            <p class="project__links">
+              <a class="linkbtn linkbtn--primary" href="https://github.com/Lim-Mars/OJT-Progress-Report" target="_blank" rel="noopener">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+                <span>View on GitHub</span>
+              </a>
+              <a class="linkbtn" href="assets/ojt/progress-report.pdf" target="_blank" rel="noopener">
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                <span>Progress report (PDF)</span>
+              </a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="section" id="certificates">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">Certificates</h2>
+        <p class="record__note">Certificates from Seminars, Courses, and Workshops</p>
+      </div>
+
+      <div class="record__body">
+        <!-- data-link  = where "Verify credential" goes (remove the attribute if there's no link)
+             data-link-label = the button text in the viewer -->
+        <div class="certdeck" id="certDeck" data-gallery="certs">
+        <div class="certdeck__main">
+          <div class="certdeck__stage">
+            <button class="certdeck__nav certdeck__nav--prev" id="certPrev" type="button" aria-label="Previous certificate">&lsaquo;</button>
+            <button class="certdeck__zoom" id="certZoom" type="button" aria-label="View this certificate full size">
+              <img id="certStageImg" src="" alt="">
+            </button>
+            <button class="certdeck__nav certdeck__nav--next" id="certNext" type="button" aria-label="Next certificate">&rsaquo;</button>
+          </div>
+
+          <div class="certdeck__info" aria-live="polite">
+            <p class="certdeck__count" id="certCount"></p>
+            <h3 class="certdeck__name" id="certName"></h3>
+            <p class="certdeck__issuer" id="certIssuer"></p>
+            <p class="certdeck__actions">
+              <a class="linkbtn linkbtn--primary" id="certLink" href="#" target="_blank" rel="noopener" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M18 14v5a1.8 1.8 0 0 1-1.8 1.8H5A1.8 1.8 0 0 1 3.2 19V7.8A1.8 1.8 0 0 1 5 6h5"/></svg><span>View credential</span></a>
+              <button class="linkbtn" id="certZoomBtn" type="button"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M18 14v5a1.8 1.8 0 0 1-1.8 1.8H5A1.8 1.8 0 0 1 3.2 19V7.8A1.8 1.8 0 0 1 5 6h5"/></svg><span>Full size</span></button>
+            </p>
+          </div>
+        </div>
+
+        <!-- Thumbnail rail. Add a certificate by copying one <li> below:
+             data-full, data-name, data-issuer are required;
+             data-link and data-link-label are optional. -->
+        <ul class="certdeck__rail" id="certRail">
+            <li><button class="certthumb is-active" type="button" data-full="assets/certificates/cisco-networking.png"
+                    data-caption="Cisco Networking Academy — CCNA: Introduction to Networks"
+                    data-name="CCNA: Introduction to Networks"
+                    data-issuer="Cisco Networking Academy"
+                    data-link="https://www.credly.com/badges/814a3743-d4c7-44cb-91d2-38814af3afea"
+                    data-link-label="Verify on Credly">
+              <img src="assets/certificates/cisco-networking.png" alt="CCNA: Introduction to Networks" loading="lazy">
+              <span class="certthumb__name">CCNA: Introduction to Networks</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/cisco-srwe.png"
+                    data-caption="CCNA: Switching, Routing, and Wireless Essentials"
+                    data-name="CCNA: Switching, Routing, and Wireless Essentials"
+                    data-issuer="Cisco Networking Academy"
+                    data-link="https://www.credly.com/badges/dcce8353-074c-4d40-927c-223ca3f86960"
+                    data-link-label="View on Credly">
+              <img src="assets/certificates/cisco-srwe.png" alt="CCNA: Switching, Routing, and Wireless Essentials" loading="lazy">
+              <span class="certthumb__name">CCNA: Switching, Routing, and Wireless Essentials</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/ethical-hacker.png"
+                    data-caption="Ethical Hacker"
+                    data-name="Ethical Hacker"
+                    data-issuer="Cisco Networking Academy"
+                    data-link="https://www.credly.com/badges/f3c0ac66-0b99-4bbc-9172-ddaffc854d7c"
+                    data-link-label="View on Credly">
+              <img src="assets/certificates/ethical-hacker.png" alt="Ethical Hacker" loading="lazy">
+              <span class="certthumb__name">Ethical Hacker</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/comptiatech+.png"
+                    data-caption="CompTIA Tech+"
+                    data-name="CompTIA Tech+"
+                    data-issuer="CompTIA"
+                    data-link="https://www.credly.com/badges/0216e52d-6ee4-4d42-875b-c3f9256845e9"
+                    data-link-label="View on Credly">
+              <img src="assets/certificates/comptiatech+.png" alt="CompTIA Tech+" loading="lazy">
+              <span class="certthumb__name">CompTIA Tech+</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/fullstackwebdev.png"
+                    data-caption="Coursera — Amazon Full Stack Web Development"
+                    data-name="Amazon Full Stack Web Development"
+                    data-issuer="Coursera"
+                    data-link="https://www.coursera.org/account/accomplishments/verify/M9GG7Z10PEIT"
+                    data-link-label="Verify on Coursera">
+              <img src="assets/certificates/fullstackwebdev.png" alt="Amazon Full Stack Web Development" loading="lazy">
+              <span class="certthumb__name">Amazon Full Stack Web Development</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/projectmanagement.png"
+                    data-caption="Coursera — Google Foundations of Project Management"
+                    data-name="Google Foundations of Project Management"
+                    data-issuer="Coursera"
+                    data-link="https://www.coursera.org/account/accomplishments/verify/2HEK8UBVYQ1W"
+                    data-link-label="Verify on Coursera">
+              <img src="assets/certificates/projectmanagement.png" alt="Google Foundations of Project Management" loading="lazy">
+              <span class="certthumb__name">Google Foundations of Project Management</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/googlecloudcomputing.png"
+                    data-caption="Google — Cloud Computing Foundation"
+                    data-name="Google Cloud Computing Foundation"
+                    data-issuer="Coursera"
+                    data-link="https://www.credly.com/earner/earned/badge/e0714497-6030-42c8-a947-eeef295fce2c"
+                    data-link-label="Verify on Credly">
+              <img src="assets/certificates/googlecloudcomputing.png" alt="Google Cloud Computing Foundation" loading="lazy">
+              <span class="certthumb__name">Google Cloud Computing Foundation</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/qgis.png"
+                    data-caption="QGIS Workshop: Introduction to GIS Mapping"
+                    data-name="QGIS Workshop: Introduction to GIS Mapping"
+                    data-issuer="MSTCONNECT PH">
+              <img src="assets/certificates/qgis.png" alt="QGIS Workshop: Introduction to GIS Mapping" loading="lazy">
+              <span class="certthumb__name">QGIS Workshop: Introduction to GIS Mapping</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/python.png"
+                    data-caption="CodeChum: Python"
+                    data-name="CodeChum: Python Course"
+                    data-issuer="CodeChum">
+              <img src="assets/certificates/python.png" alt="CodeChum: Python Course" loading="lazy">
+              <span class="certthumb__name">CodeChum: Python Course</span>
+            </button></li>
+            <li><button class="certthumb" type="button" data-full="assets/certificates/CybersecurityAwareness.png"
+                    data-caption="Cybersecurity Awareness"
+                    data-name="Cybersecurity Awareness"
+                    data-issuer="DICT Region IV-A">
+              <img src="assets/certificates/CybersecurityAwareness.png" alt="Cybersecurity Awareness" loading="lazy">
+              <span class="certthumb__name">Cybersecurity Awareness</span>
+            </button></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section section--tint" id="education">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">Education</h2>
+        <p class="record__note">Schools and recognition</p>
+      </div>
+
+      <div class="record__body">
+        <ol class="timeline">
+          <li class="stint">
+            <p class="stint__when">2022 – 2026</p>
+            <h3 class="stint__role">BS Information Technology</h3>
+            <p class="stint__where">Mapúa Malayan Colleges Laguna</p>
+            <ul class="stint__points">
+              <li>Dean's Lister, 1 semester</li>
+              <li>Relevant coursework: software development, web systems, data structures, networking, database management, systems analysis, project management, cybersecurity</li>
+            </ul>
+          </li>
+          <li class="stint">
+            <p class="stint__when">2020 – 2022</p>
+            <h3 class="stint__role">Senior High School — ICT strand</h3>
+            <p class="stint__where">Malayan Colleges Laguna</p>
+            <ul class="stint__points">
+              <li>Graduated with honors</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap record">
+      <div class="record__meta">
+        <h2 class="record__title">Contact</h2>
+       <!-- <p class="record__note"></p> -->
+      </div>
+
+      <div class="record__body contact contact--links-only">
+        <ul class="links">
+          <li><a class="linkcard" href="mailto:marsjmathewlim@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg><span class="linkcard__text"><span class="linkcard__label">Email</span><span class="linkcard__value">marsjmathewlim@gmail.com</span></span></a></li>
+          <li><a class="linkcard" href="https://github.com/Lim-Mars" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg><span class="linkcard__text"><span class="linkcard__label">GitHub</span><span class="linkcard__value">github.com/Lim-Mars</span></span></a></li>
+          <li><a class="linkcard" href="https://linkedin.com/in/marsjmathewlim" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg><span class="linkcard__text"><span class="linkcard__label">LinkedIn</span><span class="linkcard__value">linkedin.com/in/marsjmathewlim</span></span></a></li>
+          <li><a class="linkcard linkcard--cta" href="assets/cv/Resume-CV-Lim-Mars-J-Mathew.pdf" download><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg><span class="linkcard__text"><span class="linkcard__label">CV</span><span class="linkcard__value">Download PDF</span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p>© <span id="year">2026</span> Mars J Mathew A. Lim. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" type="button" hidden>
+  <span aria-hidden="true">↑</span><span class="sr-only">Back to top</span>
+</button>
+
+<!-- Image viewer: used by certificates, project shots and OJT photos -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <div class="lightbox__panel">
+    <div class="lightbox__bar">
+      <span class="lightbox__count" id="lightboxCount"></span>
+      <button class="lightbox__close" id="lightboxClose" type="button">Close</button>
+    </div>
+
+    <div class="lightbox__stage">
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Previous image">‹</button>
+      <img id="lightboxImg" src="" alt="">
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Next image">›</button>
+    </div>
+
+    <div class="lightbox__foot">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+      <a class="btn btn--ghost btn--sm" id="lightboxLink" href="#" target="_blank" rel="noopener" hidden>Open link</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
