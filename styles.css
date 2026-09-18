@@ -512,15 +512,12 @@ img { max-width: 100%; display: block; }
 
 /* ---------------- contact ---------------- */
 
-.contact { display: grid; gap: 2.5rem; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; }
+.contact { display: block; }
 
-/* with the form removed, the link list is the whole section: center it
-   and give it a max width instead of sharing the two-column grid */
-.contact--links-only {
-  grid-template-columns: 1fr;
-  justify-items: center;
+/* Constrains the contact list width while keeping it aligned to the grid column */
+.contact--links-only .contact__container {
+  width: min(32rem, 100%);
 }
-.contact--links-only .links { width: min(28rem, 100%); }
 
 /* contact link cards */
 .links { display: grid; gap: 0.7rem; }
